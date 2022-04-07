@@ -1,0 +1,68 @@
+--Kenneth Page
+--CIS150-Bates-Winter2022
+--Extra Credit for w3resource - basic select statement
+
+--1
+--select first_name as "First Name", last_name as "Last Name" from employees;
+
+--2
+--select distinct department_id from employees;
+
+--3
+--select * from employees
+--order by first_name DESC;
+
+--4
+--select first_name as "First Name", last_name as "Last Name", salary as "Salary", salary*0.12 as "PF" from employees;
+
+--5
+--select first_name as "First Name", last_name as "Last Name", salary as "Salary" from employees
+--order by salary ASC;
+
+--6
+--select sum(salary) as "Total Payable Salaries" from employees;
+
+--7
+--select max(salary) as "Highest Salary", min(salary) as "Lowest Salary" from employees;
+
+--8
+--select count(employee_id) as "Number of employees", round((avg(salary)), 2) as "Average Salary" from employees;
+
+--9
+--select count(employee_id) as "Number of Employees" from employees;
+
+--10
+--select count(distinct job_id) as "Number of jobs" from employees;
+
+--11
+--select UPPER(first_name) from employees;
+
+--12
+--SELECT SUBSTRING(first_name,1,3)
+--FROM employees;
+--ok so i typed this one out and on the page it didn't provide any results, so i checked and double-checked the substring function and syntax for it and didn't get anywhere, so i copied the solution from the page and it STILL doesn't produce any results???
+
+--13
+--select 171*214+625 result;
+--i don't get it
+
+--14
+--SELECT first_name || ' ' || last_name 'Name'
+--from employees;
+
+--15
+--SELECT TRIM(first_name) as Name
+--FROM employees;
+
+--16
+--SELECT first_name, last_name, (LENGTH(first_name)) + (LENGTH(last_name)) as NameLength
+--FROM employees;
+
+--17
+--SELECT *
+--FROM employees
+--LIMIT 10;
+
+--18
+--SELECT first_name as First, last_name as Last, ROUND(salary/12, 2) as "Monthly Salary"
+--FROM employees;

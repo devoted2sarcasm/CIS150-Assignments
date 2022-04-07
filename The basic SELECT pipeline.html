@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 14px;">
+<p><span style="font-size: 24pt;"><strong>SELECT [DISTINCT]</strong> <em>select_heading</em></span></p>
+<p><span style="font-size: 24pt;">&nbsp; &nbsp; &nbsp;<strong>FROM</strong> <em>source_tables</em></span></p>
+<p><span style="font-size: 24pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>[CROSS, LEFT] JOIN ON</strong>&nbsp;<em>table.field = other table.same field</em></span></p>
+<p><span style="font-size: 24pt;">&nbsp; &nbsp; &nbsp;<strong>WHERE</strong> <em>filter_expression</em></span></p>
+<p><span style="font-size: 24pt;">&nbsp; &nbsp; &nbsp;<strong>GROUP BY</strong> <em>grouping_expressions</em></span></p>
+<p><span style="font-size: 24pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>HAVING</strong> <em>filter_expression</em></span></p>
+<p><span style="font-size: 24pt;">&nbsp; &nbsp; &nbsp;<strong>ORDER BY</strong> <em>ordering_expressions</em></span></p>
+<p><span style="font-size: 24pt;">&nbsp; &nbsp; &nbsp;<strong>LIMIT</strong> <em>count</em></span></p>
+<p><span style="font-size: 24pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>OFFSET</strong> <em>count</em></span></p>
+<p><span style="font-size: 24pt;"><em>_____________________________________________________</em></span></p>
+<p><strong><span style="font-size: 24pt;">Writing Queries: Rules of Thumb</span></strong></p>
+<p><span style="font-size: 24pt;"><em> &bull; Start with the FROM clause. Which table(s) do you need?</em></span></p>
+<p><span style="font-size: 24pt;"><em> &bull; If you need more than one table, determine the necessary JOIN conditions.</em></span></p>
+<p><span style="font-size: 24pt;"><em> &bull; for N tables, you typically need N &ndash; 1 JOIN conditions </em></span></p>
+<p><span style="font-size: 24pt;"><em>&bull; is an outer join needed? &ndash; i.e., do you want unmatched tuples?</em></span></p>
+<p><span style="font-size: 24pt;"><em> &bull; Determine if a GROUP BY clause is needed.</em></span></p>
+<p><span style="font-size: 24pt;"><em> &bull; are you performing computations involving subgroups?</em></span></p>
+<p><span style="font-size: 24pt;"><em> &bull; Determine any other conditions that are needed.</em></span></p>
+<p><span style="font-size: 24pt;"><em> &bull; if they rely on aggregate functions, put in a HAVING clause</em></span></p>
+<p><span style="font-size: 24pt;"><em> &bull; otherwise, add to the WHERE clause</em></span></p>
+<p><span style="font-size: 24pt;"><em> &bull; is a subquery needed?</em></span></p>
+<p><span style="font-size: 24pt;"><em> &bull; Fill in the rest of the query: SELECT, ORDER BY?</em></span></p>
+<p><span style="font-size: 24pt;"><em> &bull; is DISTINCT needed? </em></span></p>
+<p><span style="font-size: 24pt;"></span></p>
+</body>
+</html>

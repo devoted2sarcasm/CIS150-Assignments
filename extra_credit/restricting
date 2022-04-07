@@ -1,0 +1,54 @@
+--Kenneth page
+--CIS150-Bates-Winter2022
+--Extra Credit-w3resource-restricting data
+
+--1
+--SELECT first_name, last_name, salary
+--FROM employees
+--WHERE salary NOT BETWEEN 10000 AND 15000;
+--this one didn't work in the editor online???
+
+--2
+--SELECT first_name, last_name, department_id
+--FROM employees
+--WHERE department_id IN(30, 100)
+--ORDER BY department_id ASC;
+
+--3
+--SELECT first_name, last_name, salary
+--FROM employees
+--WHERE (salary NOT BETWEEN 10000 AND 15000) AND department_id IN(30, 100);
+
+--4
+--SELECT first_name
+--FROM employees
+--WHERE first_name LIKE '%b%'
+--    AND first_name LIKE '%c%';
+
+--5
+--SELECT last_name, job_id, salary
+--FROM employees
+--WHERE job_id = "IT_PROG"
+--OR job_id = "SH_CLERK"
+--AND salary <> 4500
+--AND salary <> 10000
+--AND salary <> 15000;
+--there has to be a better way, right?
+
+--6
+--SELECT last_name
+--FROM employees
+--WHERE LENGTH(last_name) = 6;
+
+--7
+--SELECT last_name
+--FROM employees
+--WHERE last_name LIKE '__e%';
+
+--8
+--SELECT DISTINCT job_id
+--FROM employees;
+
+--9
+--SELECT first_name || ' ' || last_name AS Name, salary as Salary, salary*0.15 as PF
+--FROM employees;

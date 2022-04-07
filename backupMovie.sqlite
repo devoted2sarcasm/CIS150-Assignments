@@ -1,0 +1,12 @@
+        echo: on
+         eqp: off
+     explain: on
+     headers: off
+        mode: explain
+   nullvalue: "NOPEHAHA"
+      output: backupMovie.sqlite
+colseparator: "LINE"
+rowseparator: "\n"
+       stats: off
+       width: 
+    filename: :memory:
