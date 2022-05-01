@@ -46,7 +46,7 @@ Assignment weeks 11&12
 --ORDER BY COUNT(actor.actor_id) DESC, person.name ASC;
 
 --#7
---SELECT COUNT(person.name) AS 'Number of directors that have directed at least one R-rated movie'
+--SELECT COUNT(DISTINCT(person.name)) AS 'Number of directors that have directed at least one R-rated movie'
 --FROM person
 --	INNER JOIN director ON director.director_id = person.id
 --	INNER JOIN movie ON movie.id = director.movie_id
