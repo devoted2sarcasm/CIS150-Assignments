@@ -7,22 +7,21 @@ Commands for final project
 SELECT dictionary.language
 FROM dictionary
   LEFT JOIN occurs ON occurs.word = dictionary.word
+GROUP BY dictionary.language --unsure of this line
 WHERE COUNT(occurs.url) > 1000;
 */
 
 #2
-/*
-SELECT MAX(COUNT(dictionary.word)), occurs.url
+/* i was not entirely sure how to structure this database, so this one was pretty tricky, and i'm not entirely sure i've got this one, if it's not entirely correct, i'd very much like another shot, if possible
+SELECT MAX(COUNT(dictionary.word)), dictionary.language, occurs.url
 FROM dictionary
-LEFT JOIN occurs ON occurs.word = dictionary.word;
+LEFT JOIN occurs ON occurs.word = dictionary.word
+GROUP BY dictionary.language;
 */
 
 #3
 /*
-SELECT dictionary.language as 'Monolingual in:', occurs.url
-FROM dictionary
-  LEFT JOIN occurs ON occurs.word = dictionary.word
-WHERE occurs.language == 1;
+Attached files
 */
 
 
